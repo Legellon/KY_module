@@ -29,14 +29,22 @@ class KY029 {
         this._ctx.fillStyle = "#505050";
         this._ctx.fillRect(this._x + 15, this._y + 13, 150, 75);
 
+        this._ctx.font = "20px Arial";
+        this._ctx.fillStyle = "white";
+        this._ctx.fillText("KY-029", this._x + 80, this._y + 55);
+
+        this._ctx.font = "10px Arial";
+        this._ctx.fillText("-", this._x + 43, this._y + 33);
+        this._ctx.fillText("S", this._x + 43, this._y + 73);
+
         this._ctx.fillStyle = "#909090";
         this._ctx.fillRect(this._x, this._y + 25, 40, 10);
         this._ctx.fillRect(this._x, this._y + 45, 40, 10);
         this._ctx.fillRect(this._x, this._y + 65, 40, 10);
 
         this._ctx.fillStyle = this._c;
-        this._ctx.fillRect(this._x + 150, this._y + 22, 5, 55);
-        this._ctx.fillRect(this._x + 150, this._y + 32, 40, 35);
+        this._ctx.fillRect(this._x + 164, this._y + 22, 5, 55);
+        this._ctx.fillRect(this._x + 164, this._y + 32, 40, 35);
     }
 }
 
