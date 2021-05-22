@@ -14,19 +14,14 @@
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
-    first_module = new KY029(ctx, 0, 0);
-    second_module = new KY029(ctx, 0, 100);
-    third_module =  new KY029(ctx, 0, 200);
-    forth_module = new KY029(ctx, 0, 300);
+    first_module = new KY029(0, 0, 0)
+    second_module = new KY029(1, 0, 1)
+    third_module =  new KY029(1, 1, 0)
+    forth_module = new KY029(1, 1, 1)
 
-    first_module.changeState(0, 0, 0);
-    second_module.changeState(1, 0, 1);
-    third_module.changeState(1, 1, 0);
-    forth_module.changeState(1, 1, 1);
-
-    first_module.draw();
-    second_module.draw();
-    third_module.draw();
-    forth_module.draw();
+    first_module.draw(ctx, 0, 0);
+    second_module.draw(ctx, 0, 100);
+    third_module.draw(ctx, 0, 200);
+    forth_module.draw(ctx, 0, 300);
 </script>
 </html>
